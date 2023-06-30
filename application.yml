@@ -12,7 +12,3 @@ management:
     web:
       exposure:
         include: "*"
-  endpoint:
-    env:
-      post:
-        enabled: true
