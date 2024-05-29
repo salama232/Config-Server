@@ -16,6 +16,10 @@ management:
     env:
       post:
         enabled: true
+  info:
+    env:
+      enabled: true
+
 spring:
   cloud:
     bus:
