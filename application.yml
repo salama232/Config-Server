@@ -8,9 +8,6 @@ eureka:
     hostname: localhost
     instance-id: ${spring.application.name}:${random.uuid}
 management:
-  info:
-    env:
-      enabled: true
   endpoints:
     web:
       exposure:
@@ -19,9 +16,6 @@ management:
     env:
       post:
         enabled: true
-  info:
-    env:
-      enabled: true
 
 spring:
   cloud:
