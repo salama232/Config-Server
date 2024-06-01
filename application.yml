@@ -11,7 +11,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: *
+        include: "*"
+      expose: "*"
   endpoint:
     env:
       post:
