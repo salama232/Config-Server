@@ -18,6 +18,11 @@ management:
         enabled: true
 
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/realms/Clock-Event/protocol/openid-connect/certs
   cloud:
     bus:
       enabled: true
@@ -32,10 +37,3 @@ spring:
         binder:
           autoAddPartitions: true
           brokers: localhost:9092
-
-spring:
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: http://localhost:8080/realms/Clock-Event/protocol/openid-connect/certs
